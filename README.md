@@ -23,7 +23,7 @@ MyAppBank es una aplicación que te permite  y descubrir información sobre tus 
 ## Capturas de Pantalla
 | Ingreso de sesión                               | Home                                          | Transferencias                            | Support                               | Menú Lateral                             |
 |-------------------------------------------------|------------------------------------------------|-------------------------------------------|---------------------------------------|------------------------------------------|
-| ![Pantalla Principal](screenshots/login.jpeg)   | ![Home](screenshots/home.jpeg)                | ![Transferencias](screenshots/detalle.png) | ![Support](screenshots/support.jpeg)  | ![Menú Lateral](screenshots/lateralmenu.jpeg) |
+| ![Pantalla Principal](screenshots/login.jpeg)   | ![Home](screenshots/home.jpeg)                | ![Transferencias](screenshots/transfer.jpeg) | ![Support](screenshots/support.jpeg)  | ![Menú Lateral](screenshots/lateralmenu.jpeg) |
 
 
 
