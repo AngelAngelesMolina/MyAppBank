@@ -33,6 +33,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupObserver()
         homeViewModel.loadImage()
+        homeViewModel.getUserData(getString(R.string.sp_token_key))
     }
 
     private fun setupObserver() {
@@ -58,6 +59,13 @@ class HomeFragment : Fragment() {
                 }
             }
         })
+        homeViewModel.userData.observe(viewLifecycleOwner) { data ->
+            if (data!!.isNotEmpty()) {
+               mBinding.tvToken.text = "Token: $data"
+            } else {
+                mBinding.tvToken.visibility = View.GONE
+            }
+        }
     }
 
     companion object {

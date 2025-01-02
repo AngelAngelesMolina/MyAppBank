@@ -39,7 +39,5 @@ class LoginViewModel @Inject constructor(
         callback()
     }
 
-    fun getUserData(key: String): String? {
-        return securePreferences.getString(key)
-    }
+
 }

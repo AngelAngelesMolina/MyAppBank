@@ -49,8 +49,7 @@ class LoginActivity : AppCompatActivity() {
 
                 is Resource.Success -> {
                     LoaderUtils.showLoader(supportFragmentManager, true)
-                    Toast.makeText(this, "Bienvenido ${resource.data.token}", Toast.LENGTH_SHORT)
-                        .show()
+                    //Toast.makeText(this, "Bienvenido ${resource.data.token}", Toast.LENGTH_SHORT).show()
                     loginViewModel.saveUserData("USER_TOKEN", resource.data.token) {
                         LoaderUtils.showLoader(supportFragmentManager, false)
                         navigateTo(HomeActivity::class.java, finishCurrent = true)

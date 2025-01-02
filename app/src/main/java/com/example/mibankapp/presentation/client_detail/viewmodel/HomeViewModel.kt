@@ -21,6 +21,9 @@ class HomeViewModel @Inject constructor(
     private val _imageState = MutableLiveData<Resource<ImageResponse>>()
     val imageState: LiveData<Resource<ImageResponse>> get() = _imageState
 
+    private val _userData = MutableLiveData<String?>()
+    val userData: LiveData<String?> get() = _userData
+
     fun loadImage() {
         _imageState.value = Resource.Loading
 
@@ -33,8 +36,15 @@ class HomeViewModel @Inject constructor(
             }
         }
     }
+
     fun removeUserData(key: String, callback: () -> Unit) {
         securePreferences.remove(key)
         callback()
+    }
+
+
+    fun getUserData(key: String) {
+        val data = securePreferences.getString(key, "")
+        _userData.value = data
     }
 }

@@ -105,7 +105,7 @@ class HomeActivity : AppCompatActivity() {
         setSupportActionBar(mBinding.topbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // TODO: obtener user de sp
-        supportActionBar?.title = "Bienvenido Angel"
+        supportActionBar?.title = "Bienvenido usuarioDev!"
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_hamburger)
         mBinding.topbar.setNavigationOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
