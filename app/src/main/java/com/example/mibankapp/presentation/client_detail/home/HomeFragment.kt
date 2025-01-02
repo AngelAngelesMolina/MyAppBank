@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
+import com.example.mibankapp.R
 import com.example.mibankapp.common.LoaderUtils
 import com.example.mibankapp.common.Resource
 import com.example.mibankapp.databinding.FragmentHomeBinding
@@ -51,7 +52,7 @@ class HomeFragment : Fragment() {
                     LoaderUtils.showLoader(requireActivity().supportFragmentManager, false)
                     LoaderUtils.showAlert(
                         mContext = requireContext(),
-                        title = "Opps!",
+                        title = getString(R.string.title_generic_dialog),
                         msg = resource.message
                     ) {}
                 }

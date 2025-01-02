@@ -10,6 +10,7 @@
         android:id="@+id/iv_dev"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:contentDescription="@string/random_image"
         android:src="@drawable/ic_developer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Angel Angeles Molina"
+            android:text="@string/support_dev"
             android:textSize="20sp"
             android:textAlignment="center"
             android:textStyle="bold"
@@ -40,23 +41,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Android developer"
+            android:text="@string/support_position"
             android:paddingBottom="16dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Experiencia: 1 año y 2 meses"
+            android:text="@string/support_experience"
             android:paddingBottom="16dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Si necesitas ayuda con la aplicación, por favor contáctame o revisa la información adicional."
+            android:text="@string/support_help"
             android:paddingBottom="16dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Correo: angel.angeles.molina@gmail.com"
+            android:text="@string/support_mail"
             android:paddingBottom="8dp"/>
 
         <Button
@@ -64,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/common_padding_default"
-            android:text="Enviame un correo"/>
+            android:text="@string/support_send_mail"/>
 
     </LinearLayout>
 

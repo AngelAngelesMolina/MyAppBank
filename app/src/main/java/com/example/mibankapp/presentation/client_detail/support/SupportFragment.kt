@@ -38,7 +38,7 @@ class SupportFragment : Fragment() {
                 if (emailIntent.resolveActivity(it.packageManager) != null) {
                     startActivity(emailIntent)
                 } else {
-                    Toast.makeText(it, "No hay aplicaciones de correo disponibles", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(it, getString(R.string.not_applications), Toast.LENGTH_SHORT).show()
                 }
             }
         }

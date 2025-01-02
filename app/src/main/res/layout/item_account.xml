@@ -54,7 +54,7 @@
             android:id="@+id/tvAvailableAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$12,345.67"
+            tools:text="$12,345.67"
             android:textColor="@color/blue"
             android:textSize="14sp" />
 
@@ -63,7 +63,7 @@
             android:id="@+id/tvCardNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="**** **** **** 1234"
+            tools:text="**** **** **** 1234"
             android:textColor="@android:color/darker_gray"
             android:textSize="14sp" />
     </LinearLayout>
