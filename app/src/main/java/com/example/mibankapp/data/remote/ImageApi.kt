@@ -1,7 +1,6 @@
 package com.example.mibankapp.data.remote
 
-import com.example.mibankapp.data.remote.dto.ImageResponse
-import com.example.mibankapp.data.remote.dto.UserResponse
+import com.example.mibankapp.data.remote.dto.response.ImageResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

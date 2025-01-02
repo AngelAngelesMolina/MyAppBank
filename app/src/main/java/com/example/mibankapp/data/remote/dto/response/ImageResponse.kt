@@ -1,4 +1,4 @@
-package com.example.mibankapp.data.remote.dto
+package com.example.mibankapp.data.remote.dto.response
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,9 +1,8 @@
 package com.example.mibankapp.domain.use_cases.get_user_use_case
 
 import com.example.mibankapp.common.Resource
-import com.example.mibankapp.data.remote.dto.LoginRequest
-import com.example.mibankapp.data.remote.dto.UserResponse
-import com.example.mibankapp.data.remote.dto.UserSecundary
+import com.example.mibankapp.data.remote.dto.request.LoginRequest
+import com.example.mibankapp.data.remote.dto.response.UserSecundary
 import com.example.mibankapp.data.repository.LoginRepositoryImp
 import javax.inject.Inject
 

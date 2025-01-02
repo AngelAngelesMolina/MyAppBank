@@ -1,7 +1,7 @@
 package com.example.mibankapp.domain.use_cases.get_user_img_use_case
 
 import com.example.mibankapp.common.Resource
-import com.example.mibankapp.data.remote.dto.ImageResponse
+import com.example.mibankapp.data.remote.dto.response.ImageResponse
 import com.example.mibankapp.data.repository.ImageRepositoryImp
 import javax.inject.Inject
 

@@ -32,7 +32,7 @@ class SupportFragment : Fragment() {
     private fun setupListeners() {
         mBinding.btnMail.setOnClickListener {
             val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
-                data = Uri.parse("mailto:angel.angeles.molina@gmail.com") // Dirección de correo a la que se enviará el mensaje
+                data = Uri.parse("mailto:angel.angeles.molina@gmail.com")
             }
             requireActivity().let {
                 if (emailIntent.resolveActivity(it.packageManager) != null) {

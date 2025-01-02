@@ -57,15 +57,7 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onAnimationEnd(animation: Animator) {
-            /* TODO: Aqui implementaré la logica para saber: si existe data
-            en las sp entonces me voy a la actividad con data
-            sino al login
-            */
                 splashViewModel.checkUserLoginStatus(getString(R.string.sp_token_key))
-//                val intent = Intent(this@SplashActivity, LoginActivity::class.java)
-////                val intent = Intent(this@SplashActivity, HomeActivity::class.java)
-//                startActivity(intent)
-//                finish()
             }
 
             override fun onAnimationCancel(animation: Animator) {

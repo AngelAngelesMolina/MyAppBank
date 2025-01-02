@@ -1,12 +1,9 @@
 package com.example.mibankapp.presentation.client_login
 
-import android.app.Activity
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -14,12 +11,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.bumptech.glide.Glide
 import com.example.mibankapp.R
 import com.example.mibankapp.common.LoaderUtils
 import com.example.mibankapp.common.Resource
 import com.example.mibankapp.common.utils.navigateTo
-import com.example.mibankapp.data.remote.dto.LoginRequest
+import com.example.mibankapp.data.remote.dto.request.LoginRequest
 import com.example.mibankapp.databinding.ActivityLoginBinding
 import com.example.mibankapp.presentation.client_detail.HomeActivity
 import com.example.mibankapp.presentation.client_login.viewmodel.LoginViewModel
@@ -119,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
         )
         isValid = isValid and validateField(
             input = password,
-            minLength = 6, // Contraseña no puede estar vacía
+            minLength = 6,
             til = mBinding.tilPassword,
             invalidMessage = getString(R.string.invalid_password)
         )
@@ -182,9 +178,7 @@ class LoginActivity : AppCompatActivity() {
             this.isEnabled = isEnabled
             this.alpha = opacity
         }
-        if (isEnabled) {
-            hideKeyboard()
-        }
+
     }
 
     private fun hideKeyboard() {

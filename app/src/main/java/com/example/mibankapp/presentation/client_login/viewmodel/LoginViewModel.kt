@@ -1,21 +1,15 @@
 package com.example.mibankapp.presentation.client_login.viewmodel
 
-import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mibankapp.common.Resource
 import com.example.mibankapp.data.local.SecurePreferences
-import com.example.mibankapp.data.remote.dto.ImageResponse
-import com.example.mibankapp.data.remote.dto.LoginRequest
-import com.example.mibankapp.data.remote.dto.UserResponse
-import com.example.mibankapp.data.remote.dto.UserSecundary
-import com.example.mibankapp.domain.model.User
+import com.example.mibankapp.data.remote.dto.request.LoginRequest
+import com.example.mibankapp.data.remote.dto.response.UserSecundary
 import com.example.mibankapp.domain.use_cases.get_user_use_case.GetUserUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
