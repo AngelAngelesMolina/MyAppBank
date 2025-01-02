@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyBankApp</string>
+    <string name="text_welcome">¡Bienvenido! Ingresa tus datos para iniciar sesión</string>
+    <string name="hint_client_number">Número de cliente</string>
+    <string name="hint_client_password">Contraseña</string>
+    <string name="hint_client_email">Correo electrónico</string>
+    <string name="password_forgotten">Olvidé mi contraseña</string>
+    <string name="text_login_btn">Iniciar sesión</string>
+    <string name="invalid_email">El correo no tiene un formato válido</string>
+    <string name="invalid_user">El número de cliente debe tener mínimo 5 dígitos</string>
+    <string name="invalid_password">El número de cliente debe tener mínimo 6 dígitos</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    MENUS-->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_transfers">Transferencias</string>
+    <string name="menu_suport">Soporte</string>
+
+    <string name="menu_account_states">Estados de cuenta</string>
+    <string name="menu_accounts">Cuentas</string>
+    <string name="menu_data">Datos físcales</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_close_session">Cerrar sesión</string>
+    <string name="menu_close_session_confirmation">¿Seguro que desea cerrar su sesión?</string>
+    <string name="failed_login_service">No se puede iniciar sesión</string>
+    <string name="text_btn_accept">Aceptar</string>
+
+    <!--    KEYS SP-->
+    <string name="sp_token_key">USER_TOKEN</string>
+
+    <!--CONTENT DESCRIPTIONS-->
+    <string name="random_image">Random image</string>
+    <string name="account_image">Card image</string>
+    <string name="transfers_tv_title">Tus cuentas disponibles</string>
+
+
+</resources>

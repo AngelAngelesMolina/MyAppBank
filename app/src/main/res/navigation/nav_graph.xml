@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:label="Home"
+        android:name="com.example.mibankapp.presentation.client_detail.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/transferenciasFragment"
+        android:name="com.example.mibankapp.presentation.client_detail.transfers.TransfersFragment"
+        android:label="Transferencias"
+        tools:layout="@layout/fragment_transfers" />
+
+    <fragment
+        android:id="@+id/soporteFragment"
+       android:name="com.example.mibankapp.presentation.client_detail.support.SupportFragment"
+        android:label="Soporte"
+        tools:layout="@layout/fragment_support" />
+
+</navigation>
